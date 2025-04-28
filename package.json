@@ -1,0 +1,24 @@
+{
+  "name": "backtattoo",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duaksd/back_tattoo.git"
+  },
+  "keywords": ["Tattoo", "Desenvolvimento WEB", "Node.js", "Express", "Dev BackEnd"],
+  "author": "Eduarda Oliveira Casado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duaksd/back_tattoo/issues"
+  },
+  "homepage": "https://github.com/duaksd/back_tattoo#readme",
+  "description": "Sistema de exemplo para curso de Técnico de Informática do IFSP, aplicando API.",
+  "type":"module",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
