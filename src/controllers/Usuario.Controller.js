@@ -42,6 +42,9 @@ class UsuarioController {
             if (!usuario) {
                 return res.status(404).json({ error: 'Usuário não encontrado' })
             }
+            usuario.nome = nome || usuario.nome
+            usuario.senha = senha || usuario.senha
+            await usuario.save()
             return res.status(200).json(usuario)
         } catch (error) {
             return res.status(500).json({ error: 'Erro ao atualizar usuário' })
@@ -49,7 +52,7 @@ class UsuarioController {
     }
 
     async delete(req, res) {
-        const { email } = req.params
+        const { id } = req.params
         try {
             const usuario = await Usuario.findByPk(id)
             if (!usuario) {
