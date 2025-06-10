@@ -27,6 +27,7 @@
   "description": "Sistema de exemplo para curso de Técnico de Informática do IFSP, aplicando API.",
   "type": "module",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mysql2": "^3.14.1",
